@@ -1,0 +1,58 @@
+EXERCICE BLOG PHP MVC :
+Vous devez créer une application Blog sur le thème de votre choix
+regroupant une dizaine d'articles.
+Vous devez utiliser une architecture MVC.
+Votre Blog doit posséder une page d'accueil regroupant l'ensemble des
+articles.
+Lorsque l'on clique sur un article on est dirigé sur une page détail de
+l'article.
+Dans la barre de navigation prévoir un lien menant au Back Office de
+votre application.
+Depuis le Back Office on a accès au CRUD de votre table article.
+On doit pouvoir :
+- Créer un article ;
+- Consulter un article ;
+- Modifier un article ;
+- Supprimer un article.
+
+BONUS :
+Protéger l'accès à votre Back Office avec un système de connexion.
+- Créer une table membre dans votre BDD.
+- Créer un formulaire de connexion.
+- Faite en sorte que votre Back Office ne soit accessible que si l'on est
+connecté.
+
+BONUS DU BONUS :
+- Créer une page supplémentaire dans le Back Office.
+- Faite un CRUD de la table membre pour gérer les membres.
+- Créer un profil pour les membres depuis lequel ils peuvent écrire des
+articles.
+
+Vous pouvez suivre ces étapes pour vous aider :
+- Créer une base de données pour votre blog ***
+- Créer les tables dont vous aurez besoin (exemple : une table pour les
+articles, une table pour les membres etc ...) ***
+- Créer votre projet ***
+- Créer l'arborescence de votre projet ***
+- Créer un fichier config.xml et renseigner vos informations de connexion
+à la BDD ***
+- Créer l'Autoloader ***
+- Créer la class EntityRepository dans le dossier model ***
+- Créer une méthode permettant de créer un objet PDO représentant la
+connexion à votre BDD ***
+- Créer une class Controller dans le dossier controller ***
+- Créer un constructor qui instancie la class EntityRepository ***
+- Créer une méthode handleRequest() qui pilotera l'application en
+fonction de l'url ***
+- Créer une méthode render() qui vous permettra de créer des vues ***
+- Dans le fichier index importer votre autoload puis instancier la class
+controller ***
+- Depuis l'objet controller faite appel à la méthode handleRequest() ***
+- Créer le layout de votre blog ***
+Pour toute les fonctionnalités répéter les étapes ci-dessous :
+- Créer la méthode qui vous permet de récupérer les données dont vous
+avez besoin dans EntityRepository ; ***
+- Créer une méthode dans votre controller qui fera appel à la méthode
+render() pour créer une vue (passer en argument le layout, le template
+et les données à utiliser) ; ***
+- Créer un template pour votre vue. ***

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<config>
+<host>localhost</host>
+<user>root</user>
+<password></password>
+<db>blog_yoga</db>
+<table>articles</table>
+<table>members</table>
+</config>
+
