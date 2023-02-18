@@ -19,7 +19,7 @@ class Controller
     public function handleRequest()
     {
         // On stocke la valeur de l'indice "op" transmis dans l'url :
-        $op = isset($_GET['op']) ? $_GET['op'] : 'list';
+        $op = isset($_GET['op']) ? $_GET['op'] : 'home';
         session_start();
 
         try {
@@ -43,7 +43,6 @@ class Controller
                 $this->connect($op); // si on clique sur Connexion, on appelle la méthode connect()
             elseif ($op == 'deconnect')
                 $this->deconnect(); // si on clique sur Déconnexion, on appelle la méthode deconnect()
-
             else
                 throw new Exception("Erreur 404 : La page n'a pas été trouvée !");
         } catch (\Exception $e) { // Injection de dépendance 

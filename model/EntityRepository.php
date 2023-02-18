@@ -83,7 +83,7 @@ class EntityRepository
         if (!empty($_FILES['image']['name'])) {
             $image_name = $_FILES['image']['name'];
             $db_image = RACINE_SITE . "image/$image_name"; // Chemin de l'image dans la bdd 
-            $image_in_folder = $_SERVER['DOCUMENT_ROOT'] . RACINE_SITE . "image/$image_name"; // Chemmin de l'image dans le dossier
+            $image_in_folder = $_SERVER['DOCUMENT_ROOT'] . RACINE_SITE . "image/$image_name"; // Chemin de l'image dans le dossier
             copy($_FILES['image']['tmp_name'], $image_in_folder);
         }
 
