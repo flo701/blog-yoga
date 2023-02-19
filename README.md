@@ -7,7 +7,7 @@
 - Pour avoir accès à l'espace admin, et ainsi pouvoir créer, modifier et supprimer des articles :
 - Clônez ce repo ou téléchargez le fichier.zip ;
 - Installez xampp sur votre machine en cliquant [ici](https://www.apachefriends.org/fr/download.html) ;
-- Dans Xampp Control Panel, cliquez sur les boutons Start de Apache et MySql, puis cliquez sur Admin de MySql ;
+- Dans Xampp Control Panel, cliquez sur les boutons Start de Apache et MySql, puis sur Admin de MySql ;
 - Dans phpMyAdmin, créez votre propre base de données nommée `blog_yoga` et importez le fichier `blog_yoga.sql` dans cette base de données ;
 - Sur votre machine, placez le dossier que vous avez clôné ou téléchargé dans `c:/xampp/htdocs` ;
 - Dans votre navigateur, tapez `http://localhost/blog-yoga/` ;
